@@ -15,7 +15,7 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
 }
 
 export const removeSingleItemFromCart = (cartItems, cartItemToRemove) => {
-    if (cartItemToRemove.quantity == 1) {
+    if (cartItemToRemove.quantity === 1) {
         return removeItemFromCart(cartItems, cartItemToRemove);
     } else {
         return cartItems.map(cartItem => {
